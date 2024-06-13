@@ -56,6 +56,14 @@ header nav ul li a:hover {
     background-color: #51a2ac;
 }
 
+/* Nav Anchor Rule */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
 /* Style the main content */
 main {
     padding: 20px;
