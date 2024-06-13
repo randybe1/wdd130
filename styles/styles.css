@@ -24,19 +24,25 @@ body {
 
 /* Style the header */
 header {
-    padding: 20px 0;
+    padding: 18px 0;
     background-color: #0f09cb;
     color: #454242;
 }
 
+header nav {
+    text-align: center; /* Center the navigation links */
+}
+
 header nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 header nav ul li {
-    display: inline;
+    margin: 0 20px; /* Add margin between nav items */
 }
 
 header nav ul li a {
@@ -47,7 +53,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #555;
+    background-color: #51a2ac;
 }
 
 /* Style the main content */
@@ -70,6 +76,20 @@ main img {
 .profile {
     text-align: center;
     margin-bottom: 20px;
+}
+
+/* Style the h1 element */
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+/* Style the h3 element */
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #333;
 }
 
 /* Add styles for aside element */
