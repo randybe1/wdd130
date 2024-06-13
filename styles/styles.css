@@ -53,6 +53,17 @@ header nav ul li a:hover {
 /* Style the main content */
 main {
     padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* More exclusive selector for the existing profile img */
+main img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
 }
 
 /* Center the profile section */
@@ -61,26 +72,36 @@ main {
     margin-bottom: 20px;
 }
 
-.profile img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
+/* Add styles for aside element */
+aside {
+    width: 20em;
+    margin: 1em auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
 }
 
-article {
-    margin-bottom: 20px;
+/* Set img inside aside to have specific width and maintain aspect ratio */
+aside img {
+    width: 200px;
+    height: auto;
 }
 
-article p {
-    margin-bottom: 10px;
+/* Update padding for all paragraphs */
+p {
+    padding: 0;
 }
 
 /* Style the footer */
 footer {
+    margin-top: 1em;
+    border-top: 1px solid #ccc;
+    text-align: center;
     padding: 20px 0;
     background-color: #0f09cb;
     color: #ffffff;
-    text-align: center;
 }
 
 footer a {
