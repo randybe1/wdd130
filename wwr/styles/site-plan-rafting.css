@@ -1,0 +1,76 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --navigation-bg-color: var(--primary-color);
+    --navigation-link-color: #fff;
+    --navigation-hover-link-color: #f0f0f0;
+    --navigation-hover-bg-color: var(--secondary-color);
+}
+
+/* Body Styling */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings Styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+/* Header Styling */
+header {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+p {
+    padding: 10px 0;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: var(--navigation-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    color: var(--navigation-link-color);
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--navigation-hover-link-color);
+    background-color: var(--navigation-hover-bg-color);
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+}
