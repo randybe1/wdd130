@@ -1,0 +1,98 @@
+/* Resetting default margins and paddings */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #00796b; /* Dark teal */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #37474f; /* Dark blue-grey */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #546e7a; /* Darker blue-grey */
+}
+
+nav .active a {
+    background-color: #00796b; /* Dark teal, matches header */
+}
+
+.container {
+    max-width: 1200px; /* Set maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add padding on the sides */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0; /* Adjust top and bottom padding */
+    background-color: #ffffff; /* White */
+    color: #333; /* Dark grey text */
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light grey */
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+article {
+    margin-top: 10px;
+}
+
+aside {
+    background-color: #00796b; /* Dark teal */
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #37474f; /* Dark blue-grey */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    clear: both;
+}

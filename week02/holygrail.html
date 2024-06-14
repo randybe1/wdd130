@@ -7,36 +7,50 @@
     <link rel="stylesheet" href="styles/styles.css">
     <meta name="description" content="A common layout on the web called the holy grail">
     <meta name="author" content="Randy Beckford">
+    <script src="scripts/script.js" defer></script> <!-- Link to the script file -->
 </head>
+
 <body>
-    <header> 
-        <h1>A Holy Grail Layout Example</h1>
-    </header>
-    <nav> 
+  <nav> 
+    <div class="container">
+            <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <ul> 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contest</a></li>
+            <li><a href="https://byui.edu">BYU-Idaho</a></li>
+            <li><a href="https://churchofjesuschrist.org">The Church</a></li>
         </ul>
-    </nav>
-    <main>
-        <section>
-          <h2>Section 1</h2>
-          <article>
-            <h3>Article 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </article>
-        </section>
-        <section>
-          <h2>Section 2</h2>
-          <article>
-            <h3>Article 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </article>
-        </section>
-    </main>
-    <aside>
-        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/oaxaca-mexico/1200x1200/oaxaca-mexico-temple-lds-83474-wallpaper.jpg" width="200" alt="Temple Image">
-    </aside>
+    </div>
+  </nav>
+
+    <div class="container">
+        <header> 
+            <h1>A Holy Grail Layout Example</h1>
+        </header>
+        
+        <main>
+            <section>
+              <h2>Section 1</h2>
+              <article>
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </article>
+            </section>
+            <section>
+              <h2>Section 2</h2>
+              <article>
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </article>
+            </section>
+        </main>
+        <aside>
+            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/oaxaca-mexico/1200x1200/oaxaca-mexico-temple-lds-83474-wallpaper.jpg" width="200" alt=" Oaxaca Mexico Temple Wallpaper ">
+        </aside>
+    </div>
+    
     <footer>
       🌲 &copy;  Randy Beckford
     </footer>
