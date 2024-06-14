@@ -50,6 +50,10 @@ p {
     padding: 10px 0;
 }
 
+p.callout {
+    color: var(--accent1-color);
+}
+
 /* Navigation Styling */
 nav {
     background-color: var(--nav-background-color);
