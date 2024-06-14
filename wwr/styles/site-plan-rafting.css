@@ -9,10 +9,10 @@
     --accent2-color: #381d2a;
     --heading-font: 'Montserrat', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
-    --navigation-bg-color: var(--primary-color);
-    --navigation-link-color: #fff;
-    --navigation-hover-link-color: #f0f0f0;
-    --navigation-hover-bg-color: var(--secondary-color);
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #f0f0f0;
+    --nav-hover-background-color: var(--secondary-color);
 }
 
 /* Body Styling */
@@ -34,6 +34,7 @@ header {
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: #fff;
+    text-align: center;
 }
 
 /* Footer Styling */
@@ -51,26 +52,64 @@ p {
 
 /* Navigation Styling */
 nav {
-    background-color: var(--navigation-bg-color);
+    background-color: var(--nav-background-color);
     padding: 10px;
     border-radius: 5px;
+    text-align: center;
 }
 
 nav a {
-    color: var(--navigation-link-color);
+    color: var(--nav-link-color);
     text-decoration: none;
     padding: 8px 12px;
     margin: 0 5px;
     transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+    background-color: transparent;
 }
 
 nav a:hover {
-    color: var(--navigation-hover-link-color);
-    background-color: var(--navigation-hover-bg-color);
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 /* Image Styling */
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Button Styling */
+button.cta {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.cta:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header, footer, nav {
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 6px 8px;
+        margin: 0 3px;
+    }
 }
