@@ -71,18 +71,18 @@ main {
     margin: 0 auto;
 }
 
-/* More exclusive selector for the existing profile img */
-main img {
+/* Profile image styles */
+.profile img {
     width: 150px;
     height: auto;
     display: block;
-    margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 10%;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 /* Center the profile section */
 .profile {
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -104,14 +104,22 @@ h3 {
 aside {
     width: 20em;
     margin: 1em auto;
-    border: 1px solid #ccc;
     padding: 10px;
     background-color: #f9f9f9;
     color: #333;
     text-align: center;
+    position: relative;
 }
 
-/* Set img inside aside to have specific width and maintain aspect ratio */
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+    background-color: rgba(255, 255, 255, 0.7); /* Slight background for readability */
+    padding: 5px;
+    border-radius: 5px;
+}
+
 aside img {
     width: 200px;
     height: auto;
@@ -139,4 +147,13 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333; 
 }
