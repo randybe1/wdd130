@@ -75,7 +75,6 @@ main {
 .profile img {
     width: 150px;
     height: auto;
-    display: block;
     border-radius: 10%;
     float: right;
     margin: 0 0 1rem 1rem;
@@ -154,6 +153,6 @@ footer a:hover {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid #ccc;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; 
     color: #333; 
 }
