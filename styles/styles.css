@@ -71,8 +71,8 @@ main {
     margin: 0 auto;
 }
 
-/* Profile image styles */
-.profile img {
+/* Style the profile image */
+.main img {
     width: 150px;
     height: auto;
     border-radius: 10%;
@@ -153,6 +153,6 @@ footer a:hover {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid #ccc;
-    background-color: #f0f0f0; 
-    color: #333; 
+    background-color: #f0f0f0; /* Change this to your preferred background color */
+    color: #333; /* Change this to your preferred text color */
 }
