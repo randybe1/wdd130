@@ -135,7 +135,30 @@ body {
     border-radius: 40%;
     object-fit: cover;
 }
+/* History section */
+.history {
+    margin-top: 40px;
+    text-align: center;
+}
 
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.history-content p {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.history-content img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+}
 /* Adventure Awaits section */
 section {
     margin-top: 40px;
