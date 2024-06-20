@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+    --background-color: #f8f8f8;
+    --text-color: #333;
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #f0f0f0;
+    --nav-hover-background-color: var(--secondary-color);
+}
+
+/* Basic reset for ul */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: var(--nav-background-color);
+    padding: 20px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px; /* Adjust as needed */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* Adjust as needed */
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color); /* Optional, for hover effect */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Article overlay */
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hero article p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    flex: 1; /* Allows text to take up remaining space */
+    text-align: left; /* Ensures text alignment to the left */
+}
+
+.hero article img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    margin-left: 20px; /* Space between text and image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+}
+
+/* Adventure Awaits section */
+section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.rafting-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.rafting-image {
+    text-align: center;
+}
+
+.rafting-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.rafting-image p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--text-color); /* Adjust color as needed */
+}
+
+/* Footer section */
+footer {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-top: 1px solid var(--primary-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    flex-grow: 1;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+.sociallinks img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
