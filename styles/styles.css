@@ -22,6 +22,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Header, Grid, and Footer with max-width and centering */
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 /* Style the header */
 header {
     padding: 18px 0;
@@ -38,11 +44,11 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 header nav ul li {
-    margin: 0 20px; /* Add margin between nav items */
+    margin: 0 10px; /* Add margin between nav items */
 }
 
 header nav ul li a {
@@ -50,6 +56,7 @@ header nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
+    display: block;
 }
 
 header nav ul li a:hover {
@@ -62,13 +69,12 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
+    display: block;
 }
 
 /* Style the main content */
 main {
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 /* Style the profile image */
@@ -90,6 +96,8 @@ h1 {
     font-size: 2em;
     margin-bottom: 0.5em;
     color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
 }
 
 /* Style the h3 element */
@@ -155,4 +163,41 @@ footer a:hover {
     border: 1px solid #ccc;
     background-color: #f0f0f0; 
     color: #333; 
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+aside.box {
+    grid-row: 1;
+}
+
+main {
+    grid-column: 2;
+}
+
+/* Box Class Unordered List Styling */
+.box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    display: block;
+}
+
+.box ul li a:hover {
+    background-color: #ddd;
 }
