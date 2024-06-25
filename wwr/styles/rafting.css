@@ -31,9 +31,10 @@ header {
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
+    gap: 20px;
 }
 
 .logo img {
@@ -42,6 +43,7 @@ header {
 
 nav ul {
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
 }
 
@@ -135,6 +137,7 @@ body {
     border-radius: 40%;
     object-fit: cover;
 }
+
 /* History section */
 .history {
     margin-top: 40px;
@@ -159,6 +162,7 @@ body {
     height: auto;
     border-radius: 10px;
 }
+
 /* Adventure Awaits section */
 section {
     margin-top: 40px;
