@@ -236,3 +236,102 @@ footer {
     width: 24px;
     height: 24px;
 }
+
+/* Contact Us Page Specific Styles */
+/* Employee Profiles */
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.employee {
+    text-align: center;
+    margin: 10px;
+}
+
+.employee img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Contact Form */
+.contact-form-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-right: 20px; /* Add space to the right of the form */
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form button.cta {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button.cta:hover {
+    background-color: var(--accent1-color);
+}
+
+iframe {
+    max-width: 100%;
+    width: 400px;
+    height: 300px;
+    border: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .employee-profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+        margin-right: 0; /* Remove right margin on small screens */
+    }
+}
