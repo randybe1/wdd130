@@ -311,7 +311,7 @@ form button.cta:hover {
     background-color: var(--accent1-color);
 }
 
-iframe {
+iframe.google-map {
     max-width: 100%;
     width: 400px;
     height: 300px;
