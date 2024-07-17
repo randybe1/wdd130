@@ -9,11 +9,11 @@
     --heading-font: 'Montserrat', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
     --nav-background-color: var(--primary-color);
-    --nav-link-color: #ffffff; /* Changed to white for better contrast */
-    --nav-hover-link-color: #e7c24f; /* Changed to secondary color for better contrast */
-    --nav-hover-background-color: #396e94; /* Ensuring background color is primary color */
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: #e7c24f;
+    --nav-hover-background-color: #396e94;
     --background-color: #ffffff;
-    --text-color: #000000; /* Changed to black for better contrast */
+    --text-color: #000000;
 }
 
 /* Basic reset for ul */
@@ -49,31 +49,18 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--nav-link-color); /* Changed to use --nav-link-color */
+    color: var(--nav-link-color);
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     padding: 10px;
     box-sizing: border-box;
     transition: background-color 0.3s, color 0.3s;
-    background-color: var(--nav-background-color); /* Ensuring background color */
+    background-color: var(--nav-background-color);
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color); /* Changed to use --nav-hover-link-color */
-    background-color: var(--nav-hover-background-color); /* Ensuring background color */
-}
-
-/* Headings and paragraphs */
-h1, h2, h3 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-p {
-    font-family: var(--paragraph-font);
-    color: var(--text-color); /* Changed to use --text-color */
-    line-height: 1.6;
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 /* Body styling */
@@ -84,123 +71,172 @@ body {
     background-color: var(--background-color);
 }
 
-/* Hero section */
-.hero {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    transform: translateX(-50%);
-    color: #ffffff; /* Ensuring the text color is white */
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    background-color: rgba(76, 108, 98, 0.7); /* changing the background to improve contrast */
-    padding: 5px; /* Adding padding for better readability */
-    border-radius: 5px; /* Adding border radius for better aesthetics */
-}
-
-/* Article overlay */
-.hero article {
-    position: absolute;
-    bottom: 28%;
-    left: 36%;
-    transform: translateX(-50%);
-    background-color: rgba(76, 108, 98, 0.7); 
-    padding: 4.5px;
-    border-radius: 10px;
-    color: white; /* Ensuring the text color is white */
-    display: flex;
-    align-items: center;
-    max-width: 90%; /* To ensure it fits within the hero */
-    box-shadow: 0 4px 8px rgba(245, 243, 243, 0.3); /* Add a shadow for better visibility */
-}
-
-.hero article p {
-    margin: 0;
+.cta-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Trip Descriptions */
+.trip-descriptions {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.trip {
     flex: 1;
-    text-align: left;
-    color: #ffffff; /* Ensuring the text color is white */
-}
-
-.hero article img {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-    border-radius: 30%; 
-    object-fit: cover;
-}
-
-/* History section */
-.history {
-    margin-top: 40px;
+    margin: 0 10px;
     text-align: center;
 }
 
-.history-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    text-align: left;
-}
-
-.history-content p {
-    flex: 1;
-    font-family: 'Roboto', sans-serif;
-}
-
-.history-content img {
-    width: 200px; /* Adjust size as needed */
+.trip img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
+    object-fit: cover;
 }
 
-/* Adventure Awaits section */
-section {
-    margin-top: 40px;
+.trip h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.trip p {
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
+}
+
+/* Trips Table */
+.trips-table {
+    margin: 20px 0;
     text-align: center;
 }
 
-section h2 {
-    font-size: 2rem;
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
+}
+
+.trips-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Contact Page Styles */
+main {
+    margin: 20px 0;
+}
+
+main h1, main h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+main p {
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
-.rafting-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 0 20px;
-}
-
-.rafting-image {
-    text-align: center;
-}
-
-.rafting-image img {
+.google-map {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 300px;
+    border: none;
+    margin: 20px 0;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.employee {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
-.rafting-image p {
+.employee p {
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
     margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-family: var(--paragraph-font);
     font-size: 1rem;
-    color: var(--text-color); /* Changed to use --text-color */
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+form button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: var(--accent1-color);
 }
 
 /* Footer styles */
@@ -219,7 +255,7 @@ footer {
 .footer-content p {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    color: var(--text-color); /* Changed to use --text-color */
+    color: var(--text-color);
     flex-grow: 1;
 }
 
@@ -230,6 +266,9 @@ footer {
 
 .sociallinks a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .sociallinks img {
@@ -237,101 +276,27 @@ footer {
     height: 24px;
 }
 
-/* Contact Us Page Specific Styles */
-/* Employee Profiles */
-.employee-profiles {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-.employee {
-    text-align: center;
-    margin: 10px;
-}
-
-.employee img {
-    border-radius: 50%;
-    max-width: 150px;
-    height: auto;
-}
-
-/* Contact Form */
-.contact-form-container {
-    display: flex;
-    justify-content: flex-start;
-    margin: 20px 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    margin-right: 20px; /* Add space to the right of the form */
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form input[type="radio"] {
-    margin-right: 10px;
-}
-
-form input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-form button.cta {
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form button.cta:hover {
-    background-color: var(--accent1-color);
-}
-
-iframe.google-map {
-    max-width: 100%;
-    width: 400px;
-    height: 300px;
-    border: 0;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
+    .header-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .trip-descriptions {
+        flex-direction: column;
+    }
+
+    .trip {
+        margin: 10px 0;
+    }
+
     .employee-profiles {
         flex-direction: column;
         align-items: center;
     }
 
-    .contact-form-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    form {
-        width: 100%;
-        margin-right: 0; /* Remove right margin on small screens */
+    .employee {
+        margin: 10px 0;
     }
 }
