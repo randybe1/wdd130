@@ -239,7 +239,7 @@ body {
 }
 
 .history-content {
-    text-align: center;
+    text-align: center; /* Center the image horizontally */
 }
 
 .history-content img {
@@ -247,6 +247,7 @@ body {
     height: auto;
     border-radius: 10px;
     margin: 10px 0;
+    display: inline-block; /* Ensures the image is treated as inline */
 }
 
 /* Adventure Awaits section on About page */
