@@ -141,10 +141,10 @@ body {
 }
 
 .employee img {
-    width: 60%;
+    width: 100%;
     height: auto;
     max-height: 200px; /* Controls image height */
-    border-radius: 35px;
+    border-radius: 10px;
 }
 
 .employee p {
@@ -418,6 +418,24 @@ img {
     display: block;
 }
 
+/* CTA Button Styling */
+.cta-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--accent1-color);
+    color: #fff; /* Ensures text remains readable on hover */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .header-content {
@@ -440,5 +458,9 @@ img {
 
     .contact-form-container {
         padding: 0 20px;
+    }
+
+    .employee {
+        flex: 1 1 100%; /* Stack employee profiles in one column on small screens */
     }
 }
