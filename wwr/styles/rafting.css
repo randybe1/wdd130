@@ -235,19 +235,37 @@ body {
 
 /* History section on About page */
 .history {
-    margin: 20px 0;
+    margin: 05px 0;
 }
 
 .history-content {
-    text-align: center; /* Center the image horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: center;
+    text-align: Left;
+}
+
+.history-content p {
+    flex: 1 1 25%;
+    margin: 10px;
 }
 
 .history-content img {
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
     border-radius: 10px;
-    margin: 10px 0;
-    display: inline-block; /* Ensures the image is treated as inline */
+    margin: 10px;
+    flex: 1 1 100%;
+}
+
+/* Ensures the paragraphs are on left and right side with the image in the middle */
+.left-text {
+    text-align: right;
+}
+
+.right-text {
+    text-align: left;
 }
 
 /* Adventure Awaits section on About page */
